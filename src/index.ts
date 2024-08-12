@@ -7,14 +7,10 @@ import { CompanyService } from "./services/CompanyService";
 import { MetaScrapper } from "./scrapper/MetaScrapper";
 import { MetaCookies } from "./scrapper/MetaCookies";
 import { ScrapperPersister } from "./scrapper/ScrapperPersister";
-import { Company } from "./models/Company";
 
 const main = async () => {
   try {
     await MongoDB.connect();
-    await Company.updateMany({ was_used: true });
-    console.log("Nice");
-    return;
     const metaScrapper = new MetaExtractor(
       metaExtractorConfig,
       new ScrapperPersister(
