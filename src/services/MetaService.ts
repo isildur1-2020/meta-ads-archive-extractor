@@ -43,7 +43,7 @@ export class MetaServices {
          * Set INACTIVE for ads ineligible for delivery,
          * and ALL for both types.
          */
-        ad_active_status: AD_ACTIVE_STATUS.ACTIVE,
+        ad_active_status: AD_ACTIVE_STATUS.ALL,
         /*
          * Search for ads delivered before the date (inclusive) you provide.
          * The date format should be YYYY-mm-dd.
