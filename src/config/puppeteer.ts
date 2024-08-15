@@ -4,7 +4,7 @@ import { ARGS } from "./Args";
 
 export const puppeteerConfig = () => {
   const configDev: PuppeteerLaunchOptions = {
-    slowMo: 250,
+    slowMo: 500,
     headless: false,
     // args: ARGS.PROXY_SERVER ? [`--proxy-server=${ARGS.PROXY_SERVER}`] : [],
     args: ["--window-size=785,600"],
